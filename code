@@ -1,0 +1,495 @@
+function createClient() {
+  return new ImapFlow(IMAP_CONFIG);
+}
+
+async function getRecoveryCode(targetEmail) {
+  if (!targetEmail) {
+    console.error("? L?i: Vui l?ng cung c?p email d?ch d? t?m ki?m.");
+    return null;
+  }
+  let lock;
+  let recoveryCode = null;
+  const MAX_RETRIES = 5;
+  const RETRY_DELAY = 5000;
+  for (let i = 0; i < MAX_RETRIES; i++) {
+    const client = createClient();
+    try {
+        console.log(`?? ?ang k?t n?i d?n IMAP (L?n th? ${i + 1}/${MAX_RETRIES})...`);
+        await client.connect();
+        console.log("? K?t n?i th?nh c?ng.");
+        const codeFolder = 'code';
+        console.log(`?? S? l?m vi?c v?i thu m?c: "${codeFolder}"`);
+        lock = await client.getMailboxLock(codeFolder);
+        console.log(`?? ?ang t?m ki?m email cho: ${targetEmail} b?n trong thu m?c "${codeFolder}"`);
+        const searchCriteria = { unseen: true, since: new Date(Date.now() - 5 * 60 * 1000) };
+        const uids = await client.search(searchCriteria);
+        if (uids.length > 0) {
+            console.log(`?? T?m th?y ${uids.length} email g?n d?y. ?ang x? l?...`);
+            uids.sort((a, b) => b - a); // Check newest first
+            for (const uid of uids) {
+                try {
+                    const message = await client.fetchOne(uid, { envelope: true, body: true });
+
+                    // Check subject line first
+                    if (message && message.envelope && message.envelope.subject) {
+                        const subject = message.envelope.subject;
+                        const match = subject.match(/\b\d{6,8}\b/);
+                        if (match) {
+                            recoveryCode = match[0];
+                            console.log(`? T?m th?y m? kh?i ph?c trong ch? d?: ${recoveryCode}`);
+                            await client.messageFlagsAdd(uid, ['\Seen']);
+                            break;
+                        }
+                    }
+
+                    // If not in subject, check body
+                    if (message && message.content) {
+                        let bodyText = '';
+                        for await (const chunk of message.content) {
+                            bodyText += chunk.toString('utf8');
+                        }
+                        
+                        const match = bodyText.match(/\b\d{6,8}\b/);
+                        if (match) {
+                            recoveryCode = match[0];
+                            console.log(`? T?m th?y m? kh?i ph?c trong n?i dung: ${recoveryCode}`);
+                            await client.messageFlagsAdd(uid, ['\Seen']);
+                            break;
+                        }
+                    } else {
+                        console.log(`?? Email (UID: ${uid}) does not have content to parse.`);
+                    }
+                } catch (fetchErr) {
+                    console.error(`? L?i khi l?y n?i dung email (UID: ${uid}):`, fetchErr.message);
+                }
+            }
+        }
+        await client.logout();
+    } catch (err) {
+        console.error("? L?i khi l?y code:", err.message);
+    } finally {
+        if (lock) lock.release();
+        if (client.state !== 'logout') {
+            await client.logout().catch(() => {});
+        }
+    }
+    if (recoveryCode) {
+      break;
+    }
+    if (!recoveryCode) {
+        console.log(`?? Kh?ng t?m th?y code, dang d?i ${RETRY_DELAY / 1000} gi?y tru?c khi th? l?i...`);
+        await new Promise(resolve => setTimeout(resolve, RETRY_DELAY));
+    }
+  }
+
+  if (recoveryCode) {
+    return recoveryCode;
+  } else {
+    console.log(`? Kh?ng t?m th?y m? kh?i ph?c cho ${targetEmail} sau ${MAX_RETRIES} l?n th?.`);
+    return null;
+  }
+}
+
+const cookies = [
+    {
+        "domain": ".signin.ebay.com",
+        "expirationDate": 1773512556,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_pin_unauth",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "dWlkPU9XSmhZall5WmpJdE5EbGxOaTAwTVdVekxXSmtaRFl0T0dZM05XWm1aREl3TTJGaw"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1773512545.937773,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "cid",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "ibu2q7Qdr5uZs45X%23722550107"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1773512552,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "AMP_f93443b04c",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjJiMDI3YjkyZS02ODNkLTQxNzAtYjIwMC1kYjg3ODVlNjdlYmYlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzQxOTc2NTUyNzAxJTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTc0MTk3NjU1MjcwNyUyQyUyMmxhc3RFdmVudElkJTIyJTNBMSUyQyUyMnBhZ2VDb3VudGVyJTIyJTNBMSU3RA=="
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmlj2",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "Tp08svIE782hiTKVlAWDxS22Sne6AVpuHxx32tz8LtE="
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501.423686,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmf",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "7f6000436166b2-9622-467f-8b25-df8c642c3cf9174197653652314553965130-8e0ab35643533f6825"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1773512552,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "utag_main__sn",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "1"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1776140555,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "cto_bundle",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "nYJth19mTFdRMms2VnRHNnFXdzBqZ000TkpiaWFxYnQ0eUdwVUVoUFNXRkUyTzRHZk4xUjZwTXRWTGlqWmxXS1k5Q2dicTh0ZVdHWDFneXl3ZjU4MUdRamVjQWE1OEJUcDZJOGZ0SUI1dlVjbnJQTkMxYjVZQnJmcmZsaWNadVYlMkZoTWZuZmVzYTF2VEdBaXA5aDF0TVVYVzkxdyUzRCUzRA=="
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501.423668,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzme",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "0458"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501.423648,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmd",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "1756530501"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__ssds",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "2"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501.423629,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmc",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "448262593680"
+    },
+    {
+        "domain": ".ebay.com",
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "s",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "CgAD4ACBos9isOTVlNDc2NTExOTUwYWI3MmQwZjI3NzBiZmZmZmZjNjPKopAt"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501.423609,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmb",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "1741976536"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1788066549,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "totp",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "1756530548704.KlVc+Xv/bAwq2kTFyvfXT3bSQDf76zhLLQlQm405EAb0U5ESNvHTL2MrtFMcJvjM+2HHtGZBsPyowarCtGSS1g==.MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEOFP4+RUTa0ZJeqQci8OuMGIsUyi30fmjc9Rzut2bFCuZCPFf9loRFtmG0dqbgNiKwhZu9zEgFQS3OJbw6HyWgw==.E1.fRecUU4MI6lECiC2Wp9gcbhlbTGfVXlqTF7yuqDetHo"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__ssuzjsr2",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "a9be0cd8e"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1756537674.742976,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "ak_bmsc",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "280C17D13AA7D231FE714940A18B7E11~000000000000000000000000000000~YAAQqRBFdieVstCYAQAAmQRg+RzQVns09X1XK8IyoYt/SQjeeCzhpjS2bC62ADTN37LTwTM/JLs53jJIpBOV5EXf+/TpACqwLDermBCi2No5RXiRTcrM9rxR9IgDnJWSADJne1C+eUx8eHdtwxzrkKUMLg3glOPULRsCLxTy6+dL9S2prwO05qBYN4UlcjrdPtlcsyl850B+ZPobtJ8uz5UoIAq1iJI1c1/Sz5S9Ta0BzCQ7uzg4E58gXlkNuTDjgzA3wOXqdrZ/BGUbnQInqTqKM/7zL+JvvUHC8OijjYJ+y+OdXnpdYBcNZX2UiO9C9+8idLJIfrYuDmBGibw2hKhfh7quVCpeRoaefBrBiBzcTkVMGHAFl3tfViG9G6wVzloSBViGiPJW/Q=="
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501.423587,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzma",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "4e30619a-e446-4715-b022-afcb1fba7d91"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1756616947.347473,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "cpt",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "%5Ecpt_guid%3D9dd9510a-e2b3-427d-8bec-11aaf869bd4c%5Ecpt_prvd%3Dhcaptcha%5E"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1791090547.347508,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "dp1",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "bu1p/QEBfX0BAX19AQA**6c74ee73^pbf/%23200000004000000000000000000046a93baf3^tzo/1a468b29555^bl/US6c74ee73^"
+    },
+    {
+        "domain": ".ebay.com",
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "ebay",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "%5Ejs%3D1%5Esbf%3D%23000000%5E"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082503.071403,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "__deba",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "wB57ZkRbNLveZ0gsXY2ntmKtl0PwnDoJ6BVK-x_W9pWtrCZyYcGUS6clLq0MjsbH6TMgy_hYiDxIyM6Bn6YHBhFcQHgw1vFh3AFkg79hrO86FWuACrWuGghL7DnlcSoda4nWz0q8tLispvdQkZvbfw=="
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1756530801.06002,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "9dd9510a-e2b3-427d-8bec-11aaf869bd4c",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "CgAPmAClosohxNTguMTg2LjIxNS43Nyw1OC4xODYuMjE1Ljc3LDEwLjE0MC4yMzAuMjUD5wAKaLKIcTE3NTY1MzA4MDED6AACaLKIcTEwm8GRhA**"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmaj2",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "4ef89c4f-3d68-402d-b83a-fac1d6dac4d5"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmbj2",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "1741976550"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmcj2",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "529601667105"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmdj2",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "1756530502"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1772082501,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "__uzmfj2",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "7f6000436166b2-9622-467f-8b25-df8c642c3cf9174197655030014553952110-8027f231a92ce56616"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1776163252,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_scid",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "TsY0AttXJwLEx8mODh6FYXHb8I99eTXf"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1776163252,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_scid_r",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "TsY0AttXJwLEx8mODh6FYXHb8I99eTXf"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1756537701.129812,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "bm_sv",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "4BF05673A77C7C1D12F44334090C2D39~YAAQXVnKFzou+u+YAQAArWtg+RxhgsurIzy/zVmHDI3XkkaXkAnN9DB4MTqf/LMIB8TStZt89lZ3PfheTNvjsxD8TYz0s3KbcCn/iFTzNlTI9ODUcuUM1YY177TifoU77TkXVhOvMP5SAR/t8IA9ObvFUhRyGlpoH1RH6pTTNVbB0jlbrIjxBeVzu7SCBzCljXut3H2iqn/BZ1XJED0pI9nwkQrKItn6qmqOG4NC/kd3XzwaZqEJMugKjM3iKw==~1"
+    },
+    {
+        "domain": ".ebay.com",
+        "expirationDate": 1791090547.34753,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "nonsession",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "BAQAAAZhdx0gSAAaAADMABWqTuvM3NTA4MADKACBsdO5zOTVlNDc2NTExOTUwYWI3MmQwZjI3NzBiZmZmZmZjNjMAywACaLKOezEx6BcFJBiGUEiEctyRf5xcBCn/lF0*"
+    }
+]
