@@ -1,18 +1,5 @@
 [
     {
-        "domain": ".apple.com",
-        "expirationDate": 1758053425.230668,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "as_dc",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "ucp4"
-    },
-    {
         "domain": ".appleid.apple.com",
         "hostOnly": false,
         "httpOnly": true,
@@ -25,29 +12,29 @@
         "value": "web"
     },
     {
-        "domain": ".apple.com",
+        "domain": ".appleid.apple.com",
         "hostOnly": false,
         "httpOnly": true,
-        "name": "as_pcts",
+        "name": "aid",
         "path": "/",
         "sameSite": null,
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "4WM-ac6VCtcuSiwFuJNsgRmUnCkLXS-qZCnemXnyCI7Jc7XUDOndbNmt5hdfusqEt9dxtFR3TJFjhTKi_O1U_0c2XFsxbUSxM3jEDh0X7qc43Oy9UR-0ODypQAxLMiw8ZiDcwkZXUQlpXrRXYiYXkd"
+        "value": "42DDF726911391F5E1EC02CD4FF14156"
     },
     {
         "domain": ".appleid.apple.com",
-        "expirationDate": 1758389525.179711,
+        "expirationDate": 1760640381.616377,
         "hostOnly": false,
         "httpOnly": true,
-        "name": "DES64b891443705b9cf0528806b03b364246",
+        "name": "DES6752594af8b370dc41bba6724a51fb0e2",
         "path": "/",
         "sameSite": null,
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "HSARMTKNSRVXWFlaiBGIGMldfv+0665BiGDcGLWU59kY01JWyUApbBzhw/kS5o4mKyPS0zu7KborX5sdcMTZHEhzrE+uv2fD7+uhvGUNU5H7DD8ton3VGjSt21vesVbxYGlHnKUAM26uOP+zUK8yexvCDtr4jdwEWpOBFYSQjGJPqWsARuhsg9gJ1l7AnZGtyhf8Wx1RSMXlSRVX"
+        "value": "HSARMTKNSRVXWFlaFRyFR0TwdV8Ea/svXJvfKfDhnqrcf8Mzu8q5XohN8o73aIHLNY/6B/6lfYPWRrAZbXmsmXHUWqmG30dkhvrg9g3/Uba6kSOdUxLED+H5ipSRSxf8cp0gIbZXPSY01GKm7wmWMabtw8jMgQo4AkJKAADAbDyUTsZzmgV5DpS5PkXDYIFAsII2LtlDmgYpSRVX"
     },
     {
         "domain": ".appleid.apple.com",
@@ -59,56 +46,59 @@
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "31DE794EA8392B15B715404585FD3C4365491BCE25680F85E9497ECC594C31AA3CCF4A9720470B4D9091D28F2281FF80615DE39035873DB2EB94EE4654896E458D328502937312652FE1D13F7ACDB72A1E2A3878CB9FEE07D32589295D66DD43189AEA93D561EA4D02BE4E88F9AA56C53683EF995BF0561D"
+        "value": "4E34D97D3424CEDD576247F214BF240E1DBF21A1D00E48973D8527E90DD754DD718E0D6C9C730F4577D65E20C182801131B5E4D3887E7B0A4D738476AE68AE99E14D716AE6B9075BECC4A05A3471775CFF7FF9C834E2B7F7F3FBDBD5F0B70A7D4D346F21DB21930E1917C9DADB12BF5BBC680F1506B772D3"
     },
     {
         "domain": ".apple.com",
-        "expirationDate": 1789582225.230541,
+        "expirationDate": 1773599902,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "pltvcid",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "undefined"
+    },
+    {
+        "domain": ".appleid.apple.com",
+        "expirationDate": 1758049223.799711,
         "hostOnly": false,
         "httpOnly": true,
-        "name": "dssid2",
+        "name": "awat",
         "path": "/",
         "sameSite": null,
         "secure": true,
         "session": false,
         "storeId": null,
-        "value": "d4913d84-5a05-4753-98e2-c3489bbde75a"
+        "value": "TURBeU1ETTNMVEV3TFRBMk9UQTRPV0ppTFRNMU16SXRORGd4TWkwNFptVmlMVEZrTVdJNE9EZGhOR0l3TmpveE56VTRNRFE0TXpJek56UXlPakl3OngzZGJQUTN5UWRQa0hFdlZDOUNyY2VXWGxxTFRxRnQvSnJCODVQNTlRSXRzU0RrVFFTRk1SUXcwZmNWMGI3QnY3Uklmckt6RDF6OURHZEhycDlRQ2hwa1pxYUJ6UXBJdy9rZk5OeENQcnRQZldQRm5EdTdQdTlHVnkwT2NBaWV0UTBHU0JqM0d0eXY1dkpmV1RXd3B2WTFmaG1hRXBzQ2M4Y2FqemhEUkxWbWxUQjIzZmdlWVlqVXpSRkdaZWY0OHhNOGRUSjJGSVF2NlpPdmZ5cE0xZVI5Y05DOHBGSjNzZVZGU3FnTks0ZXgyNWpXNmROOW5kZjV0RVkvNTI2bmVMY0FoVDRUNllrc2VBenkwRksxZ1FIdU5NVXl3SDZ5aUkweUFseXRyZHhSRXZVZE54dzdkT3BNSG5sWWJMTkliK0NwUzY1cFpTVmZsc1ZwcHE3S0xHM3UxYWhWdEV4RGZnelBDRkY4WGVQZTNXQm5TNEJZTjBKdmpjOEttREhLaGp2R2k1SktEMlZNc2VoZ0pjZmROQlAvVzh2N1JpekE0R2tvVGVkWTQrajdWYU5nbnJwZjhUUmRET2RvOFZIRzVJaDB3VkpWTjB5eVRSWFNjMVk0cmF6YmRtdjR6YlFrNEFlSEF4VWFlRkhLZ0hEZ3duWW8vQUZuM3RYM3B4SFBudVJRTlNCVXBxZEZELzF1c1RndGdTSEJ6SDdDMkdYditJWm9UalBSaE5zOGFrOTdGK1JUTGcvTmR0ZFZxc1JZZlFNajVDTlNPWnVkN1M1MlU2UTM4TXlEaDdTRUZuVWhxSHlTQ0VZbUVhZkdxNWRKbUhYdEJwYkczQ3RORFRzTnMyMTNsZEQyNFRDbkVPdFF6aEJFV3UxYW9ldDAzcC9teWI0Rmo4b09MV2FwUnZsSGdSQy9HMERCbXpsQW5ONFUycVdxZXpYM3hFY09HenhJM0d0VGdWbzdJUCtsZlhEOVVqaTdEWkR1TFBjcGhFY0p3b3hCMlNKOEMyMWsrZzByMm40OGhyL1JTZXRkNnhra1NYNlNBOC82bUpWWEROMVprRURMMFF1QldKSCtPMFdVQzJDclVvRGxTWDlBVFZLVi9wMUtXK0JucUdaTXFyOTVueDhQSDdaeHJmQ3Uya003ZFNCVUpjeSszN2xwSVJzREljTUpKVHp2Uy85YkY1ZXZNVVE3UEE5L2N4QmNpK0VnWk1Pank2bk1BRlN3dGs5WVNjQT09fEU4Y2hQS1duU3Zxc2lYOWxMSkc2QTFNSEx0bz0="
     },
     {
         "domain": ".apple.com",
+        "expirationDate": 1758049223.799689,
         "hostOnly": false,
-        "httpOnly": false,
-        "name": "mk_epub",
+        "httpOnly": true,
+        "name": "caw-at",
         "path": "/",
         "sameSite": null,
         "secure": true,
-        "session": true,
+        "session": false,
         "storeId": null,
-        "value": "%7B%22btuid%22%3A%227bamas%22%2C%22events%22%3A%22event220%3D0.010%2Cevent221%3D0.000%2Cevent222%3D0.000%2Cevent223%3D0.504%2Cevent224%3D0.253%2Cevent225%3D0.377%2Cevent226%3D1.295%2Cevent227%3D0.037%2Cevent228%3D1.461%2Cevent229%3D2.801%2C%22%2C%22prop57%22%3A%22www.us.homepage%22%7D"
+        "value": "eyJraWQiOiIxIiwiYWxnIjoiRVMyNTYifQ.eyJzdWIiOiIwMDIwMzctMTAtMDY5MDg5YmItMzUzMi00ODEyLThmZWItMWQxYjg4N2E0YjA2IiwibHZwY3RzIjoxNzU4MDQ4MjUxMDU1LCJpc3MiOiJjb20uYXBwbGUuaWRtcy5jbGllbnQiLCJleHAiOjE3NTgwNDkyMjMsImlhdCI6MTc1ODA0ODMyM30.wA90O0Gf90KRpiwjcAtTxxLvXDuQ3XOVKcVGtmJf1YrvgAVs-unmY1lByaJn9_mBRQjaENx1onUIDGii_oQCeA"
     },
     {
-        "domain": ".apple.com",
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "pt-dm",
-        "path": "/",
-        "sameSite": "strict",
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "v1~x~nh3ibe94~m~2~n~apple%20-%20index%2Ftab%20(us)"
-    },
-    {
-        "domain": ".apple.com",
+        "domain": ".appleid.apple.com",
+        "expirationDate": 1758948197.425416,
         "hostOnly": false,
         "httpOnly": true,
-        "name": "as_rumid",
+        "name": "dat",
         "path": "/",
-        "sameSite": "strict",
+        "sameSite": null,
         "secure": true,
-        "session": true,
+        "session": false,
         "storeId": null,
-        "value": "29e15dea-eb70-4fcd-829c-ddb72eccf294"
+        "value": "0+1K56TQsXxADNlbxnyRxWffK0SLZZ+4Wfa8BLw9t6sIPJkb5ZrvJwt+lyfVXvGycy59l7ueOWmhbLTEKWqxBGOv1wQbAkZgDPpxq1smaxW7D5MFLGOmrjGpzYG07kyoKyAAnpumHBdbXn8bwoFdgUMP3brku7LHQ4REiCS+ZAdYpd7+kP5DRp3moJgX2ELvAshrmjR+T5kXUJp588W8ycDCQeNvcisbT74GPZIl6jPWC1ErdB2poRtxgyvQ2EaqutM4f9PJMRGz8pV9+WHRIeuubzPI49qBJCqQG7PEKk92DDNLPpH2ywkQSNm8jkMB2SKt2s6Gc9V5eqttsG8gbn01+JNy2H4IZXVupDgwxowepq1crgoAFSwPkZ/nGA=="
     },
     {
         "domain": ".apple.com",
@@ -124,19 +114,6 @@
     },
     {
         "domain": ".apple.com",
-        "expirationDate": 1789582225.230618,
-        "hostOnly": false,
-        "httpOnly": true,
-        "name": "dssf",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "1"
-    },
-    {
-        "domain": ".apple.com",
         "hostOnly": false,
         "httpOnly": false,
         "name": "geo",
@@ -145,96 +122,33 @@
         "secure": false,
         "session": true,
         "storeId": null,
-        "value": "VN"
+        "value": "US"
     },
     {
         "domain": ".apple.com",
-        "expirationDate": 1758216944,
+        "expirationDate": 1792607906.602626,
         "hostOnly": false,
         "httpOnly": false,
-        "name": "POD",
+        "name": "itspod",
         "path": "/",
         "sameSite": null,
         "secure": false,
         "session": false,
         "storeId": null,
-        "value": "vn~vi"
+        "value": "53"
     },
     {
         "domain": ".apple.com",
+        "expirationDate": 1773599902,
         "hostOnly": false,
         "httpOnly": false,
-        "name": "s_cc",
+        "name": "pldfltcid",
         "path": "/",
         "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "true"
-    },
-    {
-        "domain": ".apple.com",
-        "expirationDate": 1758048025,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "s_fid",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
+        "secure": false,
         "session": false,
         "storeId": null,
-        "value": "4C51D7B66FB77F97-2479982DDE4E3CDC"
-    },
-    {
-        "domain": ".apple.com",
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "s_sq",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": true,
-        "storeId": null,
-        "value": "%5B%5BB%5D%5D"
-    },
-    {
-        "domain": ".apple.com",
-        "expirationDate": 1758048026.711569,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "s_vi",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "[CS]v1|3464D40940561E8B-4000094C62F00DA6[CE]"
-    },
-    {
-        "domain": ".apple.com",
-        "expirationDate": 1758049825.230703,
-        "hostOnly": false,
-        "httpOnly": true,
-        "name": "sh_spksy",
-        "path": "/",
-        "sameSite": null,
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "."
-    },
-    {
-        "domain": ".apple.com",
-        "expirationDate": 1758053425.230299,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "shld_bt_m",
-        "path": "/",
-        "sameSite": "lax",
-        "secure": true,
-        "session": false,
-        "storeId": null,
-        "value": "-5uM6CME0pb8ajuvWM49Bw|1758053425|OVwNzGxLyjfXfrcIvjU4TA|1Xmjoz-DWRG6TiiVPWhX8Plthwg"
+        "value": "f00194b247f34baeb3ab54398ecf2747053"
     },
     {
         "domain": ".apple.com",
