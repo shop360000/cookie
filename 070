@@ -21,7 +21,7 @@
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "8922391A2627A7B181EFDFF102163594"
+        "value": "BFA154BCFD995A9FF768C12F69877AD0"
     },
     {
         "domain": ".appleid.apple.com",
@@ -46,7 +46,7 @@
         "secure": true,
         "session": true,
         "storeId": null,
-        "value": "6AE43D60984B74E9C6E4CD7B3BE898E5AC65EC86048768CA744A26428D2BCA5ECDA97465417A4CB5AF3D14C9A608FCC2AB2AB067CC5F07D61225D14898442D0C39A096B91E995D457C0E64F18DB3B89D0C913B289ECCA3FC7F211C2F018237AFB3DD919DF6FA727C8DC2A2837BEACC4DA320A1C6D8AF7A2F"
+        "value": "665E8C0530709BCBBAB35CE32A34D0CB3212ABA721C04F3CF07DF4FDB514C1BC70508360A27FA40091ECC39BF12237EF7D3CEE36E0BA8EB7C54AD6EF188645D18C79CC1401994341B3670B450EEB03242288444585A221C57CA7F94E31D5FE71B5EE4FE64D069A58309E35E955233022980262C7857D5986"
     },
     {
         "domain": ".apple.com",
@@ -62,17 +62,28 @@
         "value": "undefined"
     },
     {
-        "domain": ".ebay.com",
-        "expirationDate": 1789589877,
+        "domain": ".apple.com",
         "hostOnly": false,
         "httpOnly": false,
-        "name": "totp",
+        "name": "mk_epub",
         "path": "/",
-        "sameSite": "lax",
-        "secure": false,
-        "session": false,
+        "sameSite": null,
+        "secure": true,
+        "session": true,
         "storeId": null,
-        "value": "1758053875919.GZOpAyZORZPPfGoERkIxzrf/xJmXE7xokhvQLM7BzYGRKnsQquP3fkfGD9FtSsObly+vIhdoLSIZSYa1RNAY8Q==.fM6VkjIuiBMZEA-e3Inl31daVqaKWVA98tHneOQzCMQ"
+        "value": "%7B%22btuid%22%3A%225p99rx%22%2C%22eVar1%22%3A%22apple%20-%20index%2Ftab%20(us)%20%7C%20global%20footer%20%7C%20apple%20account%22%2C%22prop57%22%3A%22www.us.homepage%22%7D"
+    },
+    {
+        "domain": ".apple.com",
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "pt-dm",
+        "path": "/",
+        "sameSite": "strict",
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "v1~x~wb82ebd3~m~2~n~apple%20-%20index%2Ftab%20(us)"
     },
     {
         "domain": ".appleid.apple.com",
@@ -123,6 +134,30 @@
         "session": false,
         "storeId": null,
         "value": "f00194b247f34baeb3ab54398ecf2747053"
+    },
+    {
+        "domain": ".apple.com",
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "s_cc",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "true"
+    },
+    {
+        "domain": ".apple.com",
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "s_sq",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": true,
+        "storeId": null,
+        "value": "%5B%5BB%5D%5D"
     },
     {
         "domain": ".apple.com",
