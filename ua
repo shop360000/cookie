@@ -7,7 +7,6 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11",141
 "Mozilla/5.0 (compatible; Odin; https://docs.getodin.com/)",125
 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE",91
-"Mozilla/6.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Inspici (www.inspici.com)",62
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36",57
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:32.0) Gecko/20100101 Firefox/32.0",54
 "Mozilla/5.0 (compatible; Nmap Scripting Engine; http://nmap.org/book/nse.html)",50
@@ -40,7 +39,6 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:125.0) Gecko/20100101 Firefox/125.0",9
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) LoiLoNote/15.0.0 Version/17.3.1 Safari/605.1.15",9
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15",9
-"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)",9
 "Mozilla/5.0 (CentOS; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",9
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",9
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",9
@@ -800,8 +798,6 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.2.27",1
 "Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.10240",1
 "Mozilla/5.0 (CentOS; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",1
-"Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11",1
-"Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90)",1
 "Mozilla/5.0 (Knoppix; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.3.18",1
 "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",1
@@ -879,7 +875,6 @@
 "Mozilla/5.0 (ZZ; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_2_1) AppleWebKit/574.49 (KHTML, like Gecko) Chrome/104.0.2716 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2",1
-"Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_1) AppleWebKit/546.35 (KHTML, like Gecko) Chrome/78.0.2628 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 9_1_1; Win64; x64) AppleWebKit/534.37 (KHTML, like Gecko) Chrome/102.0.1742 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36",1
@@ -921,7 +916,6 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_1_1) AppleWebKit/536.37 (KHTML, like Gecko) Chrome/104.0.429 Safari/537.36",1
-"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)",1"2.0.1) Gecko/20100101 Firefox/4.0.1\x22",1
 "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50",1
 "Mozilla/5.0 (CentOS; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/548.51 (KHTML, like Gecko) Chrome/103.0.1497 Safari/537.36",1
@@ -955,7 +949,3 @@
 "Mozilla/5.0 (ZZ; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (Knoppix; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/578.45 (KHTML, like Gecko) Chrome/93.0.77 Safari/537.36",1
-"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) LoiLoNote/22.0.0 Version/17.3.1 Safari/605.1.15",1
-"Mozilla/5.0 (Knoppix; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",1
-"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.4.27",1
-"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/539.52 (KHTML, like Gecko) Chrome/87.0.2362 Safari/537.36",1
