@@ -1,0 +1,71 @@
+[
+  {
+    "url": "https://ebay.com/",
+    "name": "ebaysid",
+    "value": "BAQAAAZhdx0gSAAaAA/oDO2zJv3FleUpyWlhraU9pSnphWFJsTG1saFppNXphV2R1WVhSMWNtVXVhMlY1Y0dGcGNpSXNJblpsY2lJNk1UUXNJbUZzWnlJNklsSlROVEV5SW4wLmV5SnBjM01pT2lKSlFVWlRUMEZKUkVWT1ZDSXNJbk4xWWlJNklubDZaV3hmYnpneWRIUnJJaXdpWlhod0lqb3hOell5TURnNU9UY3pMQ0p1WW1ZaU9qRTNOakl3T0Rrd056TXNJbWxoZENJNk1UYzJNakE0T1RBM015d2lhblJwSWpvaVlqQTNNbUU1WkRJdFlqVXlNUzAwWVRNeExUbGxaVGd0TldRME1HWTBOV1ZtTjJWbUlpd2ljMlZ6YzJsdmJsUnZhMlZ1VW1WbVpYSmxibU5sSWpvaWRsNHhMakVqYVY0eEkwbGVNeU55WGpFamNGNHpJMlplTUNOMFhsVnNOREpZZW1NMlRtcFJORkpFVWtaT1JVVjVUbFZHUlU5VVNYaFBWRUV6VDFWSk1VMUVRVEpTYTBsM1RtcFpORkpVV21aTmJEaDRTVEJXWlUxcVdYY2lMQ0p6WlhOemFXOXVTV1FpT2lJeFl6Y3lZemxtTVRFNVlUQmhORFkxWXpVellqSXdOakptWm1aaE9UbGxNQ0o5Lk5UVmlJaE9WQzFrRm9NSG1YOWpCUFItUzVxQUprejdLRzJvSFFHQ3hFQThyMG5XbHJQMmJLendkYW1fQlhKaTRBMkJsTkFadkpTZHNpTjM4ZWtTR3V4UEtuTnQxZEVFTkJYdEE5TTZUTVJpQ1RLQ0R6eHVUYjB0U0Z1OTFsWmcwR3lHQVlsSlg3SDVCM1pTQkdWUnZ1UkViTV9BRjBoYUphYjdTSHN6bmc3VEtFeFRORFdXYVV3NDMyYnIzUnBWaElPNlcyUFZyLW1ueGlobmNQRzE1X3pGd3NNMW1FcjdnMHVQc0U5aUlUOTNTbkNnTC1NOXZaQlpMeUdYMDV3R3hRX3lJUTBzRlRma01vcHBJMXRfSnFqZTl6TzBIV0oxV19QbENNY28yZHlsOGxlY1pxZzVraE56Sm1hV0d0Z2syVE1vVnRyUTJBTVJQLV92SVdvQ3pOQd9vAqL+tjZJszcUje2AKRIkQwYd",
+    "domain": ".ebay.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "lax"
+  },
+  {
+    "url": "https://ebay.com/",
+    "name": "dp1",
+    "value": "bu1p/a2hhXzU3MzM36cc9bfba^pbf/%23200000000000000000080800000046ae88c3a^u1f/Khairul6cc9bfba^tzo/1a469076612^mpc/0%7C06ae88c3a^bl/AU6cc9bfba^",
+    "domain": ".ebay.com",
+    "path": "/",
+    "secure": true
+  },
+  {
+    "url": "https://ebay.com/",
+    "name": "cpt",
+    "value": "%5Ecpt_guid%3De0eb7c31-c378-4dbd-ab9f-d07e47b35ec4%5Ecpt_prvd%3Dhcaptcha%5E",
+    "domain": ".ebay.com",
+    "path": "/",
+    "secure": true
+  },
+  {
+    "url": "https://ebay.com/",
+    "name": "__deba",
+    "value": "Mh_zpkuzFDbQM7Wcewa9Cyqep3V59cHEt3eH5EB6g4_a7K3wbMVXpfONX-tBczr7V_3SyFaS4GN0OOdW9h9p428kDh6j5tHE4WhV8_w1_tt96L8n79Bd41iYGhP9o7bSUW2V6k87zwLMwuInlVhjMA==",
+    "domain": ".ebay.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "url": "https://appleid.apple.com/",
+    "name": "crsc",
+    "value": "fJpo2agVKi2jpjMtilAI6RFD3aMYIbh64UPuYgUu6oozidi+ys9uriYN6iPoNsmQc9a3AZB5cx6IHPX8dQAJxjxJa9Gp",
+    "domain": ".appleid.apple.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "url": "https://appleid.apple.com/",
+    "name": "DES646a6fa1d07265f7582fb4f9cc31348c1",
+    "value": "HSARMTKNSRVXWFlaAOd6hhxH3sLrMTNYPPYjUJs3jOC81IjIibZdgdRU7EANJzF3Ncbd17Llmo4k7IlRnVTcC8MD1eRL+z+R1pP3XaPvMgk52knS4Nq3614RDKQ0RboDHOURjFZM+/yKJ3L2aYVlpk/ZJpGRAvkqw/jPilgvAq+WH8JACjbbJ3SmJccRIG8mEROnySBxZA==SRVX",
+    "domain": ".appleid.apple.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true
+  },
+  {
+    "url": "https://apple.com/",
+    "name": "dslang",
+    "value": "US-EN",
+    "domain": ".apple.com",
+    "path": "/",
+    "secure": true
+  },
+  {
+    "url": "https://apple.com/",
+    "name": "site",
+    "value": "USA",
+    "domain": ".apple.com",
+    "path": "/",
+    "secure": true
+  }
+]
